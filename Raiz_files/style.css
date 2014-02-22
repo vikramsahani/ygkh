@@ -1,0 +1,2921 @@
+@import url(normalize.css);
+    @font-face {
+    src: url("/assets/fonts/gbold.eot");
+    src: url("/assets/fonts/gbold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/gbold.woff") format("woff"), url("/assets/fonts/gbold.ttf") format("truetype"), url("/assets/fonts/gbold.svg#gbold") format("svg");
+    font-family: "Batman";
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    src: url("/assets/fonts/glight.eot");
+    src: url("/assets/fonts/glight.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/glight.woff") format("woff"), url("/assets/fonts/glight.ttf") format("truetype"), url("/assets/fonts/glight.svg#glight") format("svg");
+    font-family: "Batman Light";
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    src: url("/assets/fonts/pm-light.eot");
+    src: url("/assets/fonts/pm-light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/pm-light.woff") format("woff"), url("/assets/fonts/pm-light.ttf") format("truetype"), url("/assets/fonts/pm-light.svg#pm-light") format("svg");
+    font-family: "Proxima";
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("/assets/fonts/pm-bold.eot");
+    src: url("/assets/fonts/pm-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/pm-bold.woff") format("woff"), url("/assets/fonts/pm-bold.ttf") format("truetype"), url("/assets/fonts/pm-bold.svg#pm-bold") format("svg");
+    font-family: "Proxima";
+    font-weight: bold;
+    font-style: bold;
+}
+body {
+    font-family: "Proxima";
+    font-size: 15px;
+    color: #545454;
+    line-height: 21px;
+}
+a {
+    outline: none !important;
+}
+.grid {
+    width: 1140px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+}
+header .logo {
+    float: left;
+    width: 104px;
+    height: 85px;
+    margin-top: 40px;
+}
+header #menu {
+    list-style: none;
+    position: relative;
+    float: right;
+    font-family: "Batman";
+    font-size: 12px;
+    margin-top: 65px;
+    margin-right: 40px;
+}
+header #menu li {
+    display: inline-block;
+    letter-spacing: 2px;
+}
+header #menu a {
+    color: #333;
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 40px;
+    cursor: pointer;
+}
+header #menu a:hover {
+    color: 333;
+}
+header #magic-line {
+    position: absolute;
+    opacity: 0;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    background: #666;
+}
+header .ie6 #menu li, header .ie7 #menu li {
+    display: inline;
+}
+header .ie6 #magic-line {
+    bottom: -3px;
+}
+header .curtir {
+    width: 100px;
+    float: right;
+    margin-top: 65px;
+}
+section {
+    width: 100%;
+    padding-top: 150px;
+}
+section h1 {
+    font-family: "Batman";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000;
+}
+section h1 .numero {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #b1b1b3;
+    text-align: center;
+    line-height: 25px;
+    color: #e41f3a;
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+    margin-right: 10px;
+}
+section h1 .vermelho {
+    color: #e41f3a;
+}
+#destaques {
+    height: 700px;
+    /*background: url(/assets/formas.png) no-repeat bottom center #ffc153;*/
+    overflow: hidden;
+}
+#destaques .esquerda {
+    float: left;
+    width: 360px;
+    color: #fff;
+}
+#destaques .esquerda .titulo1 {
+    margin-top: 80px;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    opacity: 0;
+    margin-left: -50px;
+}
+#destaques .esquerda .titulo1 .batma {
+    font-family: "Batman";
+    font-weight: bold;
+}
+#destaques .esquerda .descricao {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    margin-top: 80px;
+    opacity: 0;
+    margin-left: -50px;
+    width: 405px;
+}
+#destaques .esquerda .saibamais {
+    margin-top: 60px;
+    padding-left: 160px;
+    width: 257px;
+    height: 100px;
+    line-height: 85px;
+    /*background: url(/assets/btn-inscreva-se.png) no-repeat top;*/
+    font-family: "Batman";
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    margin-left: -50px;
+}
+#destaques .esquerda .saibamais:hover {
+    cursor: pointer;
+    background-position: 0px -100px;
+}
+#destaques .esquerda .saibamais:active {
+    line-height: 90px;
+    background-position: bottom;
+}
+#destaques .direita {
+    width: 841px;
+    height: 634px;
+    float: right;
+    margin-right: -200px;
+    margin-top: -50px;
+}
+#sobre {
+    min-height: 400px;
+    background: url(/assets/raiz.png) no-repeat top center;
+}
+.col-left {
+    width: 436px;
+    height: 300px;
+    float: left;
+}
+.col-right {
+    width: 436px;
+    height: 300px;
+    float: right;
+    text-align: right;
+    margin-top: 30px;
+}
+ul.icones {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 0px;
+    height: 400px;
+}
+ul.icones li {
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    position: relative;
+}
+ul.icones li h2 {
+    color: #555;
+    font-family: "Batman";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ul.icones li div {
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ul.icones li .icone-mercado {
+    position: absolute;
+    margin-left: -1000px;
+    background: url(/assets/icon-mercado.png) no-repeat center #b05f6d;
+}
+ul.icones li .icone-capital {
+    position: absolute;
+    margin-left: -1000px;
+    background: url(/assets/icon-capital.png) no-repeat center #ffc153;
+}
+ul.icones li .icone-tecnologia {
+    position: absolute;
+    background: url(/assets/icon-tecnologia.png) no-repeat center #eb6b56;
+}
+ul.icones li .icone-gestao {
+    position: absolute;
+    right: -1000px;
+    background: url(/assets/icon-gestao.png) no-repeat center #ffa753;
+}
+ul.icones li .icone-empreendedor {
+    position: absolute;
+    right: -1000px;
+    background: url(/assets/icon-empreendedor.png) no-repeat center #de8275;
+}
+ul.icones .animacao-left {
+    margin-left: 0px !important;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition: all 1.3s ease-out;
+    -moz-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+}
+ul.icones .animacao-right {
+    right: 0px !important;
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+    -webkit-transition: all 1.3s ease-out;
+    -moz-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+}
+ul.icones p {
+    margin-top: 240px;
+}
+ul.icones .hide1, ul.icones .hide2, ul.icones .hide3 {
+    display: none;
+}
+ul.icones .sobe {
+    margin-top: -20px;
+}
+.show {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.notshow {
+    opacity: 0 !important;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.animacao {
+    width: 100%;
+    overflow: hidden;
+}
+.teajudar {
+    width: 100%;
+    margin-top: 100px;
+    background: #b05f6d;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.teajudar h1 {
+    padding-top: 120px;
+    background: url(/assets/check.png) no-repeat top center;
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.teajudar p {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.teajudar ul.parceiros {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    height: 95px;
+    width: 1140px;
+}
+.teajudar ul.parceiros li {
+    float: left;
+    display: table-cell;
+    height: 95px;
+    line-height: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.boxes-funciona div.funciona {
+    width: 300px;
+    padding: 30px;
+    float: left;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.boxes-funciona div.funciona:last-child {
+    margin-right: 0;
+}
+.triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    margin-top: 85px;
+}
+.t1 {
+    border-left: 50px solid #ffc153;
+    margin-left: 350px;
+}
+.t2 {
+    border-left: 50px solid #eb6b56;
+    margin-left: 730px;
+}
+h2 {
+    font-family: "Batman";
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px;
+}
+.fases {
+    overflow: hidden;
+    margin-top: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+.fases .fase {
+    float: left;
+    width: 290px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+    margin-top: 80px;
+}
+.fases .fase .num {
+    width: 131px;
+    height: 134px;
+    margin: 0 auto;
+}
+.fases .fase .numero {
+    width: 118px;
+    height: 134px;
+    position: absolute;
+    z-index: 10;
+    margin-left: 7px;
+    line-height: 134px;
+    font-family: "Batman Light";
+    font-size: 72px;
+    text-align: center;
+}
+.fases .fase .bg-numero {
+    width: 131px;
+    height: 121px;
+    top: 8px;
+    z-index: 9;
+    position: absolute;
+}
+.fases .fase .n1 {
+    background: url(/assets/bg-numero1.png) no-repeat;
+}
+.fases .fase .n2 {
+    background: url(/assets/bg-numero2.png) no-repeat;
+}
+.fases .fase .n3 {
+    background: url(/assets/bg-numero3.png) no-repeat;
+}
+.fases .fase .n10 {
+    color: #47b39d;
+    background: url(/assets/numero1.png) no-repeat;
+}
+.fases .fase .n20 {
+    color: #ffc153;
+    background: url(/assets/numero2.png) no-repeat;
+}
+.fases .fase .n30 {
+    color: #eb6b56;
+    background: url(/assets/numero3.png) no-repeat;
+}
+.fases .fase:hover .bg-numero {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    transition: all 1.2s ease-out;
+}
+.fases .roda {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    transition: all 1.2s ease-out;
+}
+.fases h3 {
+    font-family: "Batman";
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+.fases p {
+    text-align: center;
+    font-size: 14px;
+}
+.divisoria {
+    height: 19px;
+    width: 100%;
+    background: url(/assets/divisoria.png);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#slider ul, #slider li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#slider li {
+    width: 1140px;
+    overflow: hidden;
+}
+#prevBtn, #nextBtn {
+    width: 20px;
+    height: 35px;
+    margin-top: -250px;
+    z-index: 1000;
+    text-indent: -9999em;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+#prevBtn:hover, #nextBtn:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+#prevBtn:active, #nextBtn:active {
+    opacity: 1;
+}
+#nextBtn {
+    float: right;
+    margin-right: -10px;
+    background: url(/assets/arrows.png) no-repeat -27px 0;
+}
+#prevBtn {
+    float: left;
+    margin-left: -20px;
+    background: url(/assets/arrows.png) no-repeat 0 0;
+}
+#prevBtn a, #nextBtn a {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 35px;
+}
+.beneficios {
+    margin-top: 100px;
+}
+.beneficios .beneficio {
+    width: 170px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.beneficios .beneficio:last-child {
+    margin-right: 0;
+}
+.beneficios .beneficio:first-child {
+    margin-left: 60px;
+}
+.beneficios .beneficio .icone-coworking {
+    padding-top: 130px;
+    background: url(/assets/icon-coworking.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-consultorias {
+    padding-top: 130px;
+    background: url(/assets/icon-consultorias.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-mentores {
+    padding-top: 130px;
+    background: url(/assets/icon-mentores.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-investidores {
+    padding-top: 130px;
+    background: url(/assets/icon-investidores.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-networking {
+    padding-top: 130px;
+    background: url(/assets/icon-networking.png) no-repeat top center;
+}
+.quempode {
+    width: 1040px;
+    height: 94px;
+    background: url(/assets/quempode.png) no-repeat;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.quempode h3 {
+    font-family: "Batman";
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    margin-left: 155px;
+    margin-top: 32px;
+}
+.quempode p {
+    width: 460px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#faq {
+    width: 100%}
+@media screen and (max-width: 1140px) {
+    #faq {
+    width: 1140px;
+}
+}.question {
+    width: 20%;
+    height: 370px;
+    float: left;
+    cursor: pointer;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    -webkit-perspective-origin: 30% 30%;
+    -moz-perspective-origin: 30% 30%;
+    perspective-origin: 30% 30%}
+@media screen and (max-width: 1140px) {
+    .question {
+    width: 285px;
+}
+}@media screen and (min-width: 1140px) and (max-width: 1600px) {
+    .question {
+    width: 25%}
+}.question .n {
+    width: 50px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+    font-family: "Batman Light";
+    font-size: 160px;
+    color: #fff;
+}
+.question .t {
+    margin-top: 90px;
+    width: 80%;
+    margin-left: 20px;
+    color: #fff;
+    font-family: "Batman Light";
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.question.flip {
+    position: relative;
+    z-index: 40;
+}
+.question.flip .resposta {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.question.flip .pergunta {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.question .pergunta {
+    width: 100%;
+    height: 370px;
+    margin-top: 0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 3;
+}
+.question .resposta {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    margin-top: -370px;
+    float: left;
+    color: #fff;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 3;
+    font-size: 17px;
+}
+.question .resposta p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: justify;
+}
+.q1, .q7, .q8, .q9, .q10, .q11 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q1, .question:hover .pergunta.q7, .question:hover .pergunta.q8, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11 {
+    background: #ffca6c;
+}
+.q2, .q8, .q9, .q10, .q11, .q12 {
+    background: #ffa753;
+}
+.question:hover .pergunta.q2, .question:hover .pergunta.q8, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12 {
+    background: #ffb46c;
+}
+.q3, .q9, .q10, .q11, .q12, .q13 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q3, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13 {
+    background: #ee7f6d;
+}
+.q4, .q10, .q11, .q12, .q13, .q14 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q4, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14 {
+    background: #b8707d;
+}
+.q5, .q11, .q12, .q13, .q14, .q15 {
+    background: #673653;
+}
+.question:hover .pergunta.q5, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15 {
+    background: #783f60;
+}
+.q6, .q12, .q13, .q14, .q15, .q16 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q6, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16 {
+    background: #57bca8;
+}
+.q7, .q13, .q14, .q15, .q16, .q17 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q7, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17 {
+    background: #ee7f6d;
+}
+.q8, .q14, .q15, .q16, .q17, .q18 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q8, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18 {
+    background: #b8707d;
+}
+.q9, .q15, .q16, .q17, .q18, .q19 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q9, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19 {
+    background: #57bca8;
+}
+.q10, .q16, .q17, .q18, .q19, .q20 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q10, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20 {
+    background: #ffca6c;
+}
+.q11, .q17, .q18, .q19, .q20, .q21 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q11, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21 {
+    background: #b8707d;
+}
+.q12, .q18, .q19, .q20, .q21, .q22 {
+    background: #ffa753;
+}
+.question:hover .pergunta.q12, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21, .question:hover .pergunta.q22 {
+    background: #ffb46c;
+}
+.q13, .q19, .q20, .q21, .q22, .q23 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q13, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21, .question:hover .pergunta.q22, .question:hover .pergunta.q23 {
+    background: #ffca6c;
+}
+.q16, .q22, .q23, .q24, .q25, .q26 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q16, .question:hover .pergunta.q22, .question:hover .pergunta.q23, .question:hover .pergunta.q24, .question:hover .pergunta.q25, .question:hover .pergunta.q26 {
+    background: #57bca8;
+}
+.q19, .q25, .q26, .q27, .q28, .q29 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q19, .question:hover .pergunta.q25, .question:hover .pergunta.q26, .question:hover .pergunta.q27, .question:hover .pergunta.q28, .question:hover .pergunta.q29 {
+    background: #ee7f6d;
+}
+h1.faq {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+#inscricao {
+    width: 100%}
+#inscricao .inscricoes-fechadas {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #eee;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Batman";
+    line-height: 25px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#inscricao .before {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 900;
+    display: none;
+}
+#inscricao .before .aviso {
+    width: 650px;
+    height: 350px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: url(/assets/colorbar.jpg) no-repeat top #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+#inscricao .before .aviso .entendi {
+    margin-top: 20px;
+    background: #47b39d;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 0;
+    padding: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: "Batman";
+    font-size: 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#inscricao .before .aviso .entendi:hover {
+    background: #eb6b56;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#inscricao .progresso {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+#inscricao .progresso li {
+    float: left;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Batman";
+    font-size: 12px;
+    font-color: #fff;
+    font-letter-spacing: 2px;
+    margin-left: -8px;
+}
+#inscricao .forms {
+    min-height: 100px;
+    margin-top: 50px;
+}
+#inscricao .etapa1 {
+    background: url(/assets/etapa1.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa2 {
+    background: url(/assets/etapa2.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa3 {
+    background: url(/assets/etapa3.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa4 {
+    background: url(/assets/etapa4.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa-ativa {
+    background-position: 0;
+    -webkit-transition: background-position 0.4s ease-in-out;
+    -moz-transition: background-position 0.4s ease-in-out;
+    transition: background-position 0.4s ease-in-out;
+}
+#inscricao .form-etapa1 {
+    margin-top: 40px;
+}
+#inscricao .form-etapa2, #inscricao .form-etapa3, #inscricao .form-etapa4 {
+    display: none;
+    margin-top: 40px;
+}
+#inscricao .form-aguarde {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-aguarde h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+#inscricao .form-aguarde p {
+    padding-top: 60px;
+    background: url(/assets/loading.gif) no-repeat top center;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .form-conclusao {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-conclusao h2 {
+    color: #47b39d;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 150px;
+    background: url(/assets/sucesso.png) no-repeat top center;
+}
+#inscricao .form-conclusao p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .form-error {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-error h2 {
+    color: #eb6b56;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 150px;
+    background: url(/assets/error.png) no-repeat top center;
+}
+#inscricao .form-error p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .error {
+    border: 1px solid rgba(235, 107, 86, 0.6) !important;
+    box-shadow: 0 0 5px rgba(235, 107, 86, 0.6) !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao input[type=text], #inscricao textarea, #inscricao #contato .form-contato textarea[type=text], #contato .form-contato #inscricao textarea[type=text], #inscricao #contato .form-contato input[type=text].enviar, #contato .form-contato #inscricao input[type=text].enviar, #inscricao input[type=email], #inscricao #contato .form-contato textarea[type=email], #contato .form-contato #inscricao textarea[type=email], #inscricao #contato .form-contato input[type=email].enviar, #contato .form-contato #inscricao input[type=email].enviar {
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao input[type=text]:focus, #inscricao textarea:focus, #inscricao input[type=email]:focus, #inscricao #contato .form-contato textarea[type=email]:focus, #contato .form-contato #inscricao textarea[type=email]:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-nome {
+    background: url(/assets/input-nome.png) no-repeat 18px center;
+}
+#inscricao .input-email {
+    background: url(/assets/input-email.png) no-repeat 18px center;
+}
+#inscricao .input-telefone {
+    background: url(/assets/input-telefone.png) no-repeat 18px center;
+    width: 380px !important;
+}
+#inscricao .input-celular {
+    background: url(/assets/input-celular.png) no-repeat 18px center;
+    width: 380px !important;
+}
+#inscricao .input-endereco {
+    background: url(/assets/input-endereco.png) no-repeat 18px center;
+    width: 477px !important;
+}
+#inscricao .input-pais {
+    background: url(/assets/input-cidade.png) no-repeat 18px center;
+    width: 477px !important;
+}
+#inscricao .input-numero, #inscricao .input-uf {
+    width: 53px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding-left: 20px !important;
+    margin-left: -20px;
+}
+#inscricao .input-cidade {
+    background: url(/assets/input-cidade.png) no-repeat 18px center;
+    width: 300px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+#inscricao .input-nome-empresa {
+    background: url(/assets/input-nome-empresa.png) no-repeat 18px center;
+}
+#inscricao .input-site {
+    background: url(/assets/input-site.png) no-repeat 18px center;
+}
+#inscricao .input-tempo {
+    background: url(/assets/input-tempo.png) no-repeat 18px center;
+}
+#inscricao .input-video {
+    background: url(/assets/input-video.png) no-repeat 18px center;
+}
+#inscricao .input-mask-linkedin {
+    width: 380px;
+    overflow: hidden;
+    background: url(/assets/input-linkedin.png) no-repeat 18px center;
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-linkedin:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-membros {
+    width: 380px;
+    overflow: hidden;
+    background: url(/assets/input-membros.png) no-repeat 18px center;
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-membros:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao #enrollment_team_members_name_tagsinput, #inscricao #enrollment_team_members_linkedin_tagsinput {
+    width: 30000px !important;
+    height: 45px;
+}
+#inscricao #enrollment_team_members_name_tag, #inscricao #enrollment_team_members_linkedin_tag {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    width: 380px !important;
+}
+#inscricao span.tag {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    background: #d8efea;
+    border: 1px solid #9fd9cd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+#inscricao span.tag a {
+    color: #47b39d;
+    text-decoration: none;
+}
+#inscricao input[type=button], #inscricao #contato .form-contato textarea[type=button], #contato .form-contato #inscricao textarea[type=button], #inscricao #contato .form-contato input[type=button].enviar, #contato .form-contato #inscricao input[type=button].enviar, #inscricao input[type=submit], #inscricao #contato .form-contato textarea[type=submit], #contato .form-contato #inscricao textarea[type=submit], #inscricao #contato .form-contato input[type=submit].enviar, #contato .form-contato #inscricao input[type=submit].enviar {
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    background: #47b39d;
+    color: #fff;
+    font-family: "Batman";
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 70px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#inscricao input[type=button]:hover, #inscricao #contato .form-contato textarea[type=button]:hover, #contato .form-contato #inscricao textarea[type=button]:hover, #inscricao input[type=submit]:hover, #inscricao #contato .form-contato textarea[type=submit]:hover, #contato .form-contato #inscricao textarea[type=submit]:hover {
+    background: #358676;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#inscricao label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#inscricao textarea {
+    padding: 10px;
+    height: 100px;
+    max-height: 100px;
+    max-width: 480px;
+}
+#inscricao input[type=radio], #inscricao #contato .form-contato textarea[type=radio], #contato .form-contato #inscricao textarea[type=radio], #inscricao #contato .form-contato input[type=radio].enviar, #contato .form-contato #inscricao input[type=radio].enviar {
+    margin-right: 5px;
+}
+#inscricao .float {
+    float: left;
+    margin-right: 20px;
+}
+#inscricao .checkbox, #inscricao .radio {
+    width: 22px;
+    height: 22px;
+    padding: 0 0 0 0;
+    background: url(/assets/checkbox.png) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#inscricao .radio {
+    background: url(/assets/radio.png) no-repeat;
+}
+#inscricao .select {
+    position: absolute;
+    width: 158px;
+    height: 21px;
+    padding: 0 24px 0 8px;
+    color: #fff;
+    font: 12px/21px arial, sans-serif;
+    background: url(/assets/select.png) no-repeat;
+    overflow: hidden;
+}
+#inscricao .hide4 {
+    display: none;
+}
+#inscricao .col {
+    width: 48%;
+    float: left;
+}
+#inscricao .dinheiro {
+    margin-top: 222px;
+}
+#inscricao .continuar3 {
+    margin-right: -500px !important;
+}
+#inscricao .obs {
+    color: #b05f6c;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 14px;
+    padding-top: 10px;
+}
+#inscricao .adicionais {
+    margin-top: 45px;
+}
+#inscricao #enrollment_team_members {
+    float: left;
+    padding: 0;
+    width: 50px;
+    text-align: center;
+    border: 0px;
+    margin-top: -14px;
+    font-family: "Batman";
+    font-size: 30px;
+    color: #878787;
+}
+#inscricao #enrollment_team_members:focus {
+    border: 0;
+    box-shadow: 0 0 0 !important;
+}
+#inscricao .slider {
+    background: #fff;
+    height: 4px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #dadada;
+    width: 390px;
+    float: left;
+    clear: right;
+    margin-top: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: inset 0 0 8px #000;
+}
+#inscricao .progress {
+    height: 4px;
+    background-color: #c5ff00;
+    display: none;
+    opacity: 0.6;
+}
+#inscricao .handle {
+    background: #47b39d;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    top: -9px;
+    position: absolute;
+    display: block;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#inscricao .range {
+    border: 1px inset #ddd;
+    float: left;
+    font-size: 20px;
+    margin: 0 0 0 15px;
+    padding: 3px 0;
+    text-align: center;
+    width: 50px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#contato {
+    width: 100%}
+#contato .duvida {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(/assets/icon-duvida.png) no-repeat center 10px;
+    padding-top: 180px;
+    font-size: 21px;
+    line-height: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#contato .duvida:hover {
+    background-position: center 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#contato .barra-contato {
+    width: 100%;
+    background: #47b39d;
+    margin-top: 120px;
+    min-height: 700px;
+    padding-top: 50px;
+}
+#contato h1 {
+    color: #fff;
+}
+#contato h1 div {
+    color: #fff;
+    border: 1px solid #fff;
+}
+#contato .form-contato {
+    width: 475px;
+    float: left;
+    margin-top: 80px;
+    -moz-placeholder-color: #fff;
+    -ms-input-placeholder-color: #fff;
+}
+#contato .form-contato input, #contato .form-contato textarea, #contato .form-contato input.enviar {
+    width: 455px;
+    height: 52px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(/assets/bg-input.png);
+    border: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#contato .form-contato ::-webkit-input-placeholder {
+    color: #fff;
+}
+#contato .form-contato ::-moz-placeholder {
+    color: #fff;
+}
+#contato .form-contato textarea {
+    max-height: 160px;
+    height: 160px;
+    max-width: 455px;
+    padding-top: 20px;
+}
+#contato .form-contato textarea.enviar, #contato .form-contato input.enviar {
+    background: #fff;
+    width: 140px;
+    text-align: center;
+    color: #47b39d;
+    float: right;
+    text-transform: uppercase;
+    text-shadow: 0 0 0;
+    padding: 0;
+    font-family: "Batman";
+    font-size: 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#contato .form-contato textarea.enviar:hover, #contato .form-contato input.enviar:hover {
+    background: #e1e1e1;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#contato .envio-sucesso {
+    display: none;
+    color: #fff;
+    float: left;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 60px;
+    font-size: 15px;
+    padding-left: 46px;
+    height: 36px;
+    line-height: 36px;
+    width: 280px;
+    background: url(/assets/sucesso2.png) no-repeat left center;
+}
+#contato ul.info {
+    float: right;
+    width: 490px;
+    margin-right: 80px;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+#contato ul.info li {
+    float: left;
+    width: 210px;
+    padding-top: 170px;
+}
+#contato ul.info li h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+#contato ul.info li h3 .ddd {
+    font-size: 20px;
+}
+#contato ul.info li p {
+    font-size: 12px;
+    line-height: 14px;
+}
+#contato ul.info li:first-child {
+    background: url(/assets/pin.png) no-repeat top center;
+    margin-right: 50px;
+}
+#contato ul.info li:last-child {
+    background: url(/assets/phone.png) no-repeat top center;
+}
+#contato .responsaveis {
+    width: 100%;
+    min-height: 200px;
+    background: #3fa08d;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: -11px;
+    color: #fff;
+}
+#contato .responsaveis p.intro {
+    width: 314px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+#contato .responsaveis ul.responsa {
+    list-style: none;
+    width: 735px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 70px;
+    padding-left: 100px;
+}
+#contato .responsaveis ul.responsa li {
+    width: 365px;
+    float: left;
+}
+#contato .responsaveis ul.responsa li .foto {
+    width: 61px;
+    float: left;
+}
+#contato .responsaveis ul.responsa li .dados {
+    width: 250px;
+    float: left;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+#contato .responsaveis ul.responsa li h2 {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#contato .responsaveis ul.responsa li p {
+    margin-top: 5px;
+}
+#contato .responsaveis ul.responsa li p a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Proxima";
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#contato .responsaveis ul.responsa li p:hover {
+    text-decoration: underline;
+}
+#contato .facens {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+@font-face {
+    src: url("/assets/fonts/gbold.eot");
+    src: url("/assets/fonts/gbold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/gbold.woff") format("woff"), url("/assets/fonts/gbold.ttf") format("truetype"), url("/assets/fonts/gbold.svg#gbold") format("svg");
+    font-family: "Batman";
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    src: url("/assets/fonts/glight.eot");
+    src: url("/assets/fonts/glight.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/glight.woff") format("woff"), url("/assets/fonts/glight.ttf") format("truetype"), url("/assets/fonts/glight.svg#glight") format("svg");
+    font-family: "Batman Light";
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    src: url("/assets/fonts/pm-light.eot");
+    src: url("/assets/fonts/pm-light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/pm-light.woff") format("woff"), url("/assets/fonts/pm-light.ttf") format("truetype"), url("/assets/fonts/pm-light.svg#pm-light") format("svg");
+    font-family: "Proxima";
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("/assets/fonts/pm-bold.eot");
+    src: url("/assets/fonts/pm-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/pm-bold.woff") format("woff"), url("/assets/fonts/pm-bold.ttf") format("truetype"), url("/assets/fonts/pm-bold.svg#pm-bold") format("svg");
+    font-family: "Proxima";
+    font-weight: bold;
+    font-style: bold;
+}
+body {
+    font-family: "Proxima";
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.19);
+    bacolor: #d4d4d4;
+    line-height: 21px;
+}
+a {
+    outline: none !important;
+}
+.grid {
+    width: 1140px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background: #f5f5f5;
+}
+header .logo {
+    float: left;
+    width: 104px;
+    height: 20px;
+    margin-top: 40px;
+}
+header #menu {
+    list-style: none;
+    position: relative;
+    float: right;
+    font-family: "Batman";
+    font-size: 12px;
+    margin-top: 65px;
+    margin-right: 40px;
+}
+header #menu li {
+    display: inline-block;
+    letter-spacing: 2px;
+}
+header #menu a {
+    color: #333;
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 40px;
+    cursor: pointer;
+}
+header #menu a:hover {
+    color: 333;
+}
+header #magic-line {
+    position: absolute;
+    opacity: 0;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    background: #666;
+}
+header .ie6 #menu li, header .ie7 #menu li {
+    display: inline;
+}
+header .ie6 #magic-line {
+    bottom: -3px;
+}
+header .curtir {
+    width: 100px;
+    float: right;
+    margin-top: 65px;
+}
+section {
+    width: 100%;
+    padding-top: 150px;
+}
+section h1 {
+    font-family: "Batman";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000;
+}
+section h1 .numero {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #b1b1b3;
+    text-align: center;
+    line-height: 25px;
+    color: #e41f3a;
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+    margin-right: 10px;
+}
+section h1 .vermelho {
+    color: #e41f3a;
+}
+#destaques {
+    height: 700px;
+    background: url(/assets/formas.png) no-repeat bottom center #ffc153;
+    overflow: hidden;
+}
+#destaques .esquerda {
+    float: left;
+    width: 360px;
+    color: #fff;
+}
+#destaques .esquerda .titulo1 {
+    margin-top: 80px;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    opacity: 0;
+    margin-left: -50px;
+}
+#destaques .esquerda .titulo1 .batma {
+    font-family: "Batman";
+    font-weight: bold;
+}
+#destaques .esquerda .descricao {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    margin-top: 80px;
+    opacity: 0;
+    margin-left: -50px;
+    width: 405px;
+}
+#destaques .esquerda .saibamais {
+    margin-top: 60px;
+    padding-left: 160px;
+    width: 257px;
+    height: 100px;
+    line-height: 85px;
+    background: url(/assets/btn-inscreva-se.png) no-repeat top;
+    font-family: "Batman";
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    margin-left: -50px;
+}
+#destaques .esquerda .saibamais:hover {
+    cursor: pointer;
+    background-position: 0px -100px;
+}
+#destaques .esquerda .saibamais:active {
+    line-height: 90px;
+    background-position: bottom;
+}
+#destaques .direita {
+    width: 841px;
+    height: 634px;
+    float: right;
+    margin-right: -200px;
+    margin-top: -50px;
+}
+#sobre {
+    min-height: 200px;
+    background: url(/assets/raiz.png) no-repeat top center;
+}
+.col-left {
+    width: 436px;
+    float: left;
+}
+.col-right {
+    width: 436px;
+    float: right;
+    text-align: right;
+    margin-top: 30px;
+}
+ul.icones {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 0px;
+    height: 400px;
+}
+ul.icones li {
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    position: relative;
+}
+ul.icones li h2 {
+    color: #555;
+    font-family: "Batman";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ul.icones li div {
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ul.icones li .icone-mercado {
+    position: absolute;
+    margin-left: -1000px;
+    background: url(/assets/icon-mercado.png) no-repeat center #b05f6d;
+}
+ul.icones li .icone-capital {
+    position: absolute;
+    margin-left: -1000px;
+    background: url(/assets/icon-capital.png) no-repeat center #ffc153;
+}
+ul.icones li .icone-tecnologia {
+    position: absolute;
+    background: url(/assets/icon-tecnologia.png) no-repeat center #eb6b56;
+}
+ul.icones li .icone-gestao {
+    position: absolute;
+    right: -1000px;
+    background: url(/assets/icon-gestao.png) no-repeat center #ffa753;
+}
+ul.icones li .icone-empreendedor {
+    position: absolute;
+    right: -1000px;
+    background: url(/assets/icon-empreendedor.png) no-repeat center #de8275;
+}
+ul.icones .animacao-left {
+    margin-left: 0px !important;
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition: all 1.3s ease-out;
+    -moz-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+}
+ul.icones .animacao-right {
+    right: 0px !important;
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+    -webkit-transition: all 1.3s ease-out;
+    -moz-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+}
+ul.icones p {
+    margin-top: 240px;
+}
+ul.icones .hide1, ul.icones .hide2, ul.icones .hide3 {
+    display: none;
+}
+ul.icones .sobe {
+    margin-top: -20px;
+}
+.show {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.notshow {
+    opacity: 0 !important;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.animacao {
+    width: 100%;
+    overflow: hidden;
+}
+.teajudar {
+    width: 100%;
+    margin-top: 100px;
+    background: #b05f6d;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.teajudar h1 {
+    padding-top: 120px;
+    background: url(/assets/check.png) no-repeat top center;
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.teajudar p {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.teajudar ul.parceiros {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    height: 95px;
+    width: 1140px;
+}
+.teajudar ul.parceiros li {
+    float: left;
+    display: table-cell;
+    height: 95px;
+    line-height: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.boxes-funciona div.funciona {
+    width: 300px;
+    padding: 30px;
+    float: left;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.boxes-funciona div.funciona:last-child {
+    margin-right: 0;
+}
+.triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    margin-top: 85px;
+}
+.t1 {
+    border-left: 50px solid #ffc153;
+    margin-left: 350px;
+}
+.t2 {
+    border-left: 50px solid #eb6b56;
+    margin-left: 730px;
+}
+h2 {
+    font-family: "Batman";
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px;
+}
+.fases {
+    overflow: hidden;
+    margin-top: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+.fases .fase {
+    float: left;
+    width: 290px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+    margin-top: 80px;
+}
+.fases .fase .num {
+    width: 131px;
+    height: 134px;
+    margin: 0 auto;
+}
+.fases .fase .numero {
+    width: 118px;
+    height: 134px;
+    position: absolute;
+    z-index: 10;
+    margin-left: 7px;
+    line-height: 134px;
+    font-family: "Batman Light";
+    font-size: 72px;
+    text-align: center;
+}
+.fases .fase .bg-numero {
+    width: 131px;
+    height: 121px;
+    top: 8px;
+    z-index: 9;
+    position: absolute;
+}
+.fases .fase .n1 {
+    background: url(/assets/bg-numero1.png) no-repeat;
+}
+.fases .fase .n2 {
+    background: url(/assets/bg-numero2.png) no-repeat;
+}
+.fases .fase .n3 {
+    background: url(/assets/bg-numero3.png) no-repeat;
+}
+.fases .fase .n10 {
+    color: #47b39d;
+    background: url(/assets/numero1.png) no-repeat;
+}
+.fases .fase .n20 {
+    color: #ffc153;
+    background: url(/assets/numero2.png) no-repeat;
+}
+.fases .fase .n30 {
+    color: #eb6b56;
+    background: url(/assets/numero3.png) no-repeat;
+}
+.fases .fase:hover .bg-numero {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    transition: all 1.2s ease-out;
+}
+.fases .roda {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transition: all 1.2s ease-out;
+    -moz-transition: all 1.2s ease-out;
+    transition: all 1.2s ease-out;
+}
+.fases h3 {
+    font-family: "Batman";
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+.fases p {
+    text-align: center;
+    font-size: 14px;
+}
+.divisoria {
+    height: 19px;
+    width: 100%;
+    background: url(/assets/divisoria.png);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#slider ul, #slider li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#slider li {
+    width: 1140px;
+    overflow: hidden;
+}
+#prevBtn, #nextBtn {
+    width: 20px;
+    height: 35px;
+    margin-top: -250px;
+    z-index: 1000;
+    text-indent: -9999em;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+#prevBtn:hover, #nextBtn:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+#prevBtn:active, #nextBtn:active {
+    opacity: 1;
+}
+#nextBtn {
+    float: right;
+    margin-right: -10px;
+    background: url(/assets/arrows.png) no-repeat -27px 0;
+}
+#prevBtn {
+    float: left;
+    margin-left: -20px;
+    background: url(/assets/arrows.png) no-repeat 0 0;
+}
+#prevBtn a, #nextBtn a {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 35px;
+}
+.beneficios {
+    margin-top: 100px;
+}
+.beneficios .beneficio {
+    width: 170px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.beneficios .beneficio:last-child {
+    margin-right: 0;
+}
+.beneficios .beneficio:first-child {
+    margin-left: 60px;
+}
+.beneficios .beneficio .icone-coworking {
+    padding-top: 130px;
+    background: url(/assets/icon-coworking.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-consultorias {
+    padding-top: 130px;
+    background: url(/assets/icon-consultorias.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-mentores {
+    padding-top: 130px;
+    background: url(/assets/icon-mentores.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-investidores {
+    padding-top: 130px;
+    background: url(/assets/icon-investidores.png) no-repeat top center;
+}
+.beneficios .beneficio .icone-networking {
+    padding-top: 130px;
+    background: url(/assets/icon-networking.png) no-repeat top center;
+}
+.quempode {
+    width: 1040px;
+    height: 94px;
+    background: url(/assets/quempode.png) no-repeat;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.quempode h3 {
+    font-family: "Batman";
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    margin-left: 155px;
+    margin-top: 32px;
+}
+.quempode p {
+    width: 460px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#faq {
+    width: 100%}
+@media screen and (max-width: 1140px) {
+    #faq {
+    width: 1140px;
+}
+}.question {
+    width: 20%;
+    height: 370px;
+    float: left;
+    cursor: pointer;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    -webkit-perspective-origin: 30% 30%;
+    -moz-perspective-origin: 30% 30%;
+    perspective-origin: 30% 30%}
+@media screen and (max-width: 1140px) {
+    .question {
+    width: 285px;
+}
+}@media screen and (min-width: 1140px) and (max-width: 1600px) {
+    .question {
+    width: 25%}
+}.question .n {
+    width: 50px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+    font-family: "Batman Light";
+    font-size: 160px;
+    color: #fff;
+}
+.question .t {
+    margin-top: 90px;
+    width: 80%;
+    margin-left: 20px;
+    color: #fff;
+    font-family: "Batman Light";
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.question.flip {
+    position: relative;
+    z-index: 40;
+}
+.question.flip .resposta {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.question.flip .pergunta {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.question .pergunta {
+    width: 100%;
+    height: 370px;
+    margin-top: 0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 3;
+}
+.question .resposta {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    margin-top: -370px;
+    float: left;
+    color: #fff;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 3;
+    font-size: 17px;
+}
+.question .resposta p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: justify;
+}
+.q1, .q7, .q8, .q9, .q10, .q11 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q1, .question:hover .pergunta.q7, .question:hover .pergunta.q8, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11 {
+    background: #ffca6c;
+}
+.q2, .q8, .q9, .q10, .q11, .q12 {
+    background: #ffa753;
+}
+.question:hover .pergunta.q2, .question:hover .pergunta.q8, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12 {
+    background: #ffb46c;
+}
+.q3, .q9, .q10, .q11, .q12, .q13 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q3, .question:hover .pergunta.q9, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13 {
+    background: #ee7f6d;
+}
+.q4, .q10, .q11, .q12, .q13, .q14 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q4, .question:hover .pergunta.q10, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14 {
+    background: #b8707d;
+}
+.q5, .q11, .q12, .q13, .q14, .q15 {
+    background: #673653;
+}
+.question:hover .pergunta.q5, .question:hover .pergunta.q11, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15 {
+    background: #783f60;
+}
+.q6, .q12, .q13, .q14, .q15, .q16 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q6, .question:hover .pergunta.q12, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16 {
+    background: #57bca8;
+}
+.q7, .q13, .q14, .q15, .q16, .q17 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q7, .question:hover .pergunta.q13, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17 {
+    background: #ee7f6d;
+}
+.q8, .q14, .q15, .q16, .q17, .q18 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q8, .question:hover .pergunta.q14, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18 {
+    background: #b8707d;
+}
+.q9, .q15, .q16, .q17, .q18, .q19 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q9, .question:hover .pergunta.q15, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19 {
+    background: #57bca8;
+}
+.q10, .q16, .q17, .q18, .q19, .q20 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q10, .question:hover .pergunta.q16, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20 {
+    background: #ffca6c;
+}
+.q11, .q17, .q18, .q19, .q20, .q21 {
+    background: #b05f6d;
+}
+.question:hover .pergunta.q11, .question:hover .pergunta.q17, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21 {
+    background: #b8707d;
+}
+.q12, .q18, .q19, .q20, .q21, .q22 {
+    background: #ffa753;
+}
+.question:hover .pergunta.q12, .question:hover .pergunta.q18, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21, .question:hover .pergunta.q22 {
+    background: #ffb46c;
+}
+.q13, .q19, .q20, .q21, .q22, .q23 {
+    background: #ffc153;
+}
+.question:hover .pergunta.q13, .question:hover .pergunta.q19, .question:hover .pergunta.q20, .question:hover .pergunta.q21, .question:hover .pergunta.q22, .question:hover .pergunta.q23 {
+    background: #ffca6c;
+}
+.q16, .q22, .q23, .q24, .q25, .q26 {
+    background: #47b39d;
+}
+.question:hover .pergunta.q16, .question:hover .pergunta.q22, .question:hover .pergunta.q23, .question:hover .pergunta.q24, .question:hover .pergunta.q25, .question:hover .pergunta.q26 {
+    background: #57bca8;
+}
+.q19, .q25, .q26, .q27, .q28, .q29 {
+    background: #eb6b56;
+}
+.question:hover .pergunta.q19, .question:hover .pergunta.q25, .question:hover .pergunta.q26, .question:hover .pergunta.q27, .question:hover .pergunta.q28, .question:hover .pergunta.q29 {
+    background: #ee7f6d;
+}
+h1.faq {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+#inscricao {
+    width: 100%}
+#inscricao .inscricoes-fechadas {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #eee;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Batman";
+    line-height: 25px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#inscricao .before {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 900;
+    display: none;
+}
+#inscricao .before .aviso {
+    width: 650px;
+    height: 350px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: url(/assets/colorbar.jpg) no-repeat top #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+#inscricao .before .aviso .entendi {
+    margin-top: 20px;
+    background: #47b39d;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 0;
+    padding: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: "Batman";
+    font-size: 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#inscricao .before .aviso .entendi:hover {
+    background: #eb6b56;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#inscricao .progresso {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+#inscricao .progresso li {
+    float: left;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Batman";
+    font-size: 12px;
+    font-color: #fff;
+    font-letter-spacing: 2px;
+    margin-left: -8px;
+}
+#inscricao .forms {
+    min-height: 100px;
+    margin-top: 50px;
+}
+#inscricao .etapa1 {
+    background: url(/assets/etapa1.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa2 {
+    background: url(/assets/etapa2.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa3 {
+    background: url(/assets/etapa3.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa4 {
+    background: url(/assets/etapa4.png) no-repeat;
+    background-position: -280px 0;
+}
+#inscricao .etapa-ativa {
+    background-position: 0;
+    -webkit-transition: background-position 0.4s ease-in-out;
+    -moz-transition: background-position 0.4s ease-in-out;
+    transition: background-position 0.4s ease-in-out;
+}
+#inscricao .form-etapa1 {
+    margin-top: 40px;
+}
+#inscricao .form-etapa2, #inscricao .form-etapa3, #inscricao .form-etapa4 {
+    display: none;
+    margin-top: 40px;
+}
+#inscricao .form-aguarde {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-aguarde h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+#inscricao .form-aguarde p {
+    padding-top: 60px;
+    background: url(/assets/loading.gif) no-repeat top center;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .form-conclusao {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-conclusao h2 {
+    color: #47b39d;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 150px;
+    background: url(/assets/sucesso.png) no-repeat top center;
+}
+#inscricao .form-conclusao p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .form-error {
+    display: none;
+    margin-top: 100px;
+}
+#inscricao .form-error h2 {
+    color: #eb6b56;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 150px;
+    background: url(/assets/error.png) no-repeat top center;
+}
+#inscricao .form-error p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inscricao .error {
+    border: 1px solid rgba(235, 107, 86, 0.6) !important;
+    box-shadow: 0 0 5px rgba(235, 107, 86, 0.6) !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao input[type=text], #inscricao textarea, #inscricao #contato .form-contato textarea[type=text], #contato .form-contato #inscricao textarea[type=text], #inscricao #contato .form-contato input[type=text].enviar, #contato .form-contato #inscricao input[type=text].enviar, #inscricao input[type=email], #inscricao #contato .form-contato textarea[type=email], #contato .form-contato #inscricao textarea[type=email], #inscricao #contato .form-contato input[type=email].enviar, #contato .form-contato #inscricao input[type=email].enviar {
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao input[type=text]:focus, #inscricao textarea:focus, #inscricao input[type=email]:focus, #inscricao #contato .form-contato textarea[type=email]:focus, #contato .form-contato #inscricao textarea[type=email]:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-nome {
+    background: url(/assets/input-nome.png) no-repeat 18px center;
+}
+#inscricao .input-email {
+    background: url(/assets/input-email.png) no-repeat 18px center;
+}
+#inscricao .input-telefone {
+    background: url(/assets/input-telefone.png) no-repeat 18px center;
+    width: 380px !important;
+}
+#inscricao .input-celular {
+    background: url(/assets/input-celular.png) no-repeat 18px center;
+    width: 380px !important;
+}
+#inscricao .input-endereco {
+    background: url(/assets/input-endereco.png) no-repeat 18px center;
+    width: 477px !important;
+}
+#inscricao .input-pais {
+    background: url(/assets/input-cidade.png) no-repeat 18px center;
+    width: 477px !important;
+}
+#inscricao .input-numero, #inscricao .input-uf {
+    width: 53px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    padding-left: 20px !important;
+    margin-left: -20px;
+}
+#inscricao .input-cidade {
+    background: url(/assets/input-cidade.png) no-repeat 18px center;
+    width: 300px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+#inscricao .input-nome-empresa {
+    background: url(/assets/input-nome-empresa.png) no-repeat 18px center;
+}
+#inscricao .input-site {
+    background: url(/assets/input-site.png) no-repeat 18px center;
+}
+#inscricao .input-tempo {
+    background: url(/assets/input-tempo.png) no-repeat 18px center;
+}
+#inscricao .input-video {
+    background: url(/assets/input-video.png) no-repeat 18px center;
+}
+#inscricao .input-mask-linkedin {
+    width: 380px;
+    overflow: hidden;
+    background: url(/assets/input-linkedin.png) no-repeat 18px center;
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-linkedin:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-membros {
+    width: 380px;
+    overflow: hidden;
+    background: url(/assets/input-membros.png) no-repeat 18px center;
+    width: 480px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 11px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao .input-mask-membros:focus {
+    border: 1px solid rgba(71, 179, 157, 0.6);
+    box-shadow: 0 0 5px rgba(71, 179, 157, 0.6);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#inscricao #enrollment_team_members_name_tagsinput, #inscricao #enrollment_team_members_linkedin_tagsinput {
+    width: 30000px !important;
+    height: 45px;
+}
+#inscricao #enrollment_team_members_name_tag, #inscricao #enrollment_team_members_linkedin_tag {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    width: 380px !important;
+}
+#inscricao span.tag {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    background: #d8efea;
+    border: 1px solid #9fd9cd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+#inscricao span.tag a {
+    color: #47b39d;
+    text-decoration: none;
+}
+#inscricao input[type=button], #inscricao #contato .form-contato textarea[type=button], #contato .form-contato #inscricao textarea[type=button], #inscricao #contato .form-contato input[type=button].enviar, #contato .form-contato #inscricao input[type=button].enviar, #inscricao input[type=submit], #inscricao #contato .form-contato textarea[type=submit], #contato .form-contato #inscricao textarea[type=submit], #inscricao #contato .form-contato input[type=submit].enviar, #contato .form-contato #inscricao input[type=submit].enviar {
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    background: #47b39d;
+    color: #fff;
+    font-family: "Batman";
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 70px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#inscricao input[type=button]:hover, #inscricao #contato .form-contato textarea[type=button]:hover, #contato .form-contato #inscricao textarea[type=button]:hover, #inscricao input[type=submit]:hover, #inscricao #contato .form-contato textarea[type=submit]:hover, #contato .form-contato #inscricao textarea[type=submit]:hover {
+    background: #358676;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#inscricao label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#inscricao textarea {
+    padding: 10px;
+    height: 100px;
+    max-height: 100px;
+    max-width: 480px;
+}
+#inscricao input[type=radio], #inscricao #contato .form-contato textarea[type=radio], #contato .form-contato #inscricao textarea[type=radio], #inscricao #contato .form-contato input[type=radio].enviar, #contato .form-contato #inscricao input[type=radio].enviar {
+    margin-right: 5px;
+}
+#inscricao .float {
+    float: left;
+    margin-right: 20px;
+}
+#inscricao .checkbox, #inscricao .radio {
+    width: 22px;
+    height: 22px;
+    padding: 0 0 0 0;
+    background: url(/assets/checkbox.png) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#inscricao .radio {
+    background: url(/assets/radio.png) no-repeat;
+}
+#inscricao .select {
+    position: absolute;
+    width: 158px;
+    height: 21px;
+    padding: 0 24px 0 8px;
+    color: #fff;
+    font: 12px/21px arial, sans-serif;
+    background: url(/assets/select.png) no-repeat;
+    overflow: hidden;
+}
+#inscricao .hide4 {
+    display: none;
+}
+#inscricao .col {
+    width: 48%;
+    float: left;
+}
+#inscricao .dinheiro {
+    margin-top: 222px;
+}
+#inscricao .continuar3 {
+    margin-right: -500px !important;
+}
+#inscricao .obs {
+    color: #b05f6c;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 14px;
+    padding-top: 10px;
+}
+#inscricao .adicionais {
+    margin-top: 45px;
+}
+#inscricao #enrollment_team_members {
+    float: left;
+    padding: 0;
+    width: 50px;
+    text-align: center;
+    border: 0px;
+    margin-top: -14px;
+    font-family: "Batman";
+    font-size: 30px;
+    color: #878787;
+}
+#inscricao #enrollment_team_members:focus {
+    border: 0;
+    box-shadow: 0 0 0 !important;
+}
+#inscricao .slider {
+    background: #fff;
+    height: 4px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #dadada;
+    width: 390px;
+    float: left;
+    clear: right;
+    margin-top: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: inset 0 0 8px #000;
+}
+#inscricao .progress {
+    height: 4px;
+    background-color: #c5ff00;
+    display: none;
+    opacity: 0.6;
+}
+#inscricao .handle {
+    background: #47b39d;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    top: -9px;
+    position: absolute;
+    display: block;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#inscricao .range {
+    border: 1px inset #ddd;
+    float: left;
+    font-size: 20px;
+    margin: 0 0 0 15px;
+    padding: 3px 0;
+    text-align: center;
+    width: 50px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#contato {
+    width: 100%}
+#contato .duvida {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(/assets/icon-duvida.png) no-repeat center 10px;
+    padding-top: 180px;
+    font-size: 21px;
+    line-height: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#contato .duvida:hover {
+    background-position: center 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#contato .barra-contato {
+    width: 100%;
+    background: #47b39d;
+    margin-top: 120px;
+    min-height: 700px;
+    padding-top: 50px;
+}
+#contato h1 {
+    color: #fff;
+}
+#contato h1 div {
+    color: #fff;
+    border: 1px solid #fff;
+}
+#contato .form-contato {
+    width: 475px;
+    float: left;
+    margin-top: 80px;
+    -moz-placeholder-color: #fff;
+    -ms-input-placeholder-color: #fff;
+}
+#contato .form-contato input, #contato .form-contato textarea, #contato .form-contato input.enviar {
+    width: 455px;
+    height: 52px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(/assets/bg-input.png);
+    border: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#contato .form-contato ::-webkit-input-placeholder {
+    color: #fff;
+}
+#contato .form-contato ::-moz-placeholder {
+    color: #fff;
+}
+#contato .form-contato textarea {
+    max-height: 160px;
+    height: 160px;
+    max-width: 455px;
+    padding-top: 20px;
+}
+#contato .form-contato textarea.enviar, #contato .form-contato input.enviar {
+    background: #fff;
+    width: 140px;
+    text-align: center;
+    color: #47b39d;
+    float: right;
+    text-transform: uppercase;
+    text-shadow: 0 0 0;
+    padding: 0;
+    font-family: "Batman";
+    font-size: 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#contato .form-contato textarea.enviar:hover, #contato .form-contato input.enviar:hover {
+    background: #e1e1e1;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#contato .envio-sucesso {
+    display: none;
+    color: #fff;
+    float: left;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 60px;
+    font-size: 15px;
+    padding-left: 46px;
+    height: 36px;
+    line-height: 36px;
+    width: 280px;
+    background: url(/assets/sucesso2.png) no-repeat left center;
+}
+#contato ul.info {
+    float: right;
+    width: 490px;
+    margin-right: 80px;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+}
+#contato ul.info li {
+    float: left;
+    width: 210px;
+    padding-top: 170px;
+}
+#contato ul.info li h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+#contato ul.info li h3 .ddd {
+    font-size: 20px;
+}
+#contato ul.info li p {
+    font-size: 12px;
+    line-height: 14px;
+}
+#contato ul.info li:first-child {
+    background: url(/assets/pin.png) no-repeat top center;
+    margin-right: 50px;
+}
+#contato ul.info li:last-child {
+    background: url(/assets/phone.png) no-repeat top center;
+}
+#contato .responsaveis {
+    width: 100%;
+    min-height: 200px;
+    background: #3fa08d;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: -11px;
+    color: #fff;
+}
+#contato .responsaveis p.intro {
+    width: 314px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+#contato .responsaveis ul.responsa {
+    list-style: none;
+    width: 735px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 70px;
+    padding-left: 100px;
+}
+#contato .responsaveis ul.responsa li {
+    width: 365px;
+    float: left;
+}
+#contato .responsaveis ul.responsa li .foto {
+    width: 61px;
+    float: left;
+}
+#contato .responsaveis ul.responsa li .dados {
+    width: 250px;
+    float: left;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+#contato .responsaveis ul.responsa li h2 {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#contato .responsaveis ul.responsa li p {
+    margin-top: 5px;
+}
+#contato .responsaveis ul.responsa li p a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Proxima";
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#contato .responsaveis ul.responsa li p:hover {
+    text-decoration: underline;
+}
+#contato .facens {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/*#here goes mine*/
+
+
+#main_graph {
+	background-color: #f5f5f5;
+	width: 80%;
+	height: 650px; 
+	margin-top: 20px;
+	border: none;
+	padding-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#doughnut{
+    background-color: #f5f5f5;
+	width: 80%;
+	height: 650px; 
+	margin-top: 40px;
+	border: none;
+	padding-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+
+
+#doughnut_bar{
+    background-color: white;
+    width: 80%;
+    height: 800px; 
+    margin-top: 10px;
+    border: none;
+    padding-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#text{
+    text-align: center;
+    font-family: ;
+    background-color: #f5f5f5;
+    width: 80%;
+    margin-top: 60px;
+    border: none;
+    padding-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+#bubblechart{
+    background-color: white;
+    width: 80%;
+    height: 670px; 
+    margin-top: 10px;
+    border: none;
+    padding-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+

@@ -1,0 +1,42 @@
+code,name
+NY.ADJ.DNGY.CD,Adjusted savings: energy depletion (current US$)
+NY.ADJ.DMIN.CD,Adjusted savings: mineral depletion (current US$)
+SP.ADO.TFRT,"Adolescent fertility rate (births per 1,000 women ages 15-19)"
+SP.POP.DPND,Age dependency ratio (% of working-age population)
+SP.POP.DPND.OL,"Age dependency ratio, old (% of working-age population)"
+SP.POP.DPND.YG,"Age dependency ratio, young (% of working-age population)"
+SP.DYN.CBRT.IN,"Birth rate, crude (per 1,000 people)"
+AG.PRD.CROP.XD,Crop production index (2004-2006 = 100)
+SP.DYN.CDRT.IN,"Death rate, crude (per 1,000 people)"
+SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)"
+AG.PRD.FOOD.XD,Food production index (2004-2006 = 100)
+AG.LND.TOTL.K2,Land area (sq. km)
+SP.DYN.LE00.FE.IN,"Life expectancy at birth, female (years)"
+SP.DYN.LE00.MA.IN,"Life expectancy at birth, male (years)"
+SP.DYN.LE00.IN,"Life expectancy at birth, total (years)"
+AG.PRD.LVSK.XD,Livestock production index (2004-2006 = 100)
+IT.CEL.SETS,Mobile cellular subscriptions
+IT.CEL.SETS.P2,Mobile cellular subscriptions (per 100 people)
+SP.POP.TOTL,Population (Total)
+SP.POP.0014.TO.ZS,Population ages 0-14 (% of total)
+SP.POP.1564.TO.ZS,Population ages 15-64 (% of total)
+SP.POP.65UP.TO.ZS,Population ages 65 and above (% of total)
+EN.POP.DNST,Population density (people per sq. km of land area)
+SP.POP.GROW,Population growth (annual %)
+EN.URB.LCTY,Population in largest city
+EN.URB.LCTY.UR.ZS,Population in the largest city (% of urban population)
+SP.POP.TOTL.FE.ZS,"Population, female (% of total)"
+SE.PRM.DURS,"Primary education, duration (years)"
+SE.PRM.AGES,Primary school starting age (years)
+SP.RUR.TOTL,Rural population
+SP.RUR.TOTL.ZS,Rural population (% of total population)
+SE.SEC.DURS,"Secondary education, duration (years)"
+SE.SEC.AGES,Secondary school starting age (years)
+AG.SRF.TOTL.K2,Surface area (sq. km)
+SP.DYN.TO65.FE.ZS,"Survival to age 65, female (% of cohort)"
+SP.DYN.TO65.MA.ZS,"Survival to age 65, male (% of cohort)"
+IT.MLT.MAIN,Telephone lines
+IT.MLT.MAIN.P2,Telephone lines (per 100 people)
+SP.URB.TOTL,Urban population
+SP.URB.TOTL.IN.ZS,Urban population (% of total)
+SP.URB.GROW,Urban population growth (annual %)

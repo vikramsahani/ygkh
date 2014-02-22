@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Interactive Graph of Countries under Concern</title>
+        <link rel="stylesheet" type="text/css" href="css/strikeoutchart.css">
+    </head>
+    <body>
+        
+        <h2><div id="Title"></div></h2>
+        <div class="g-chart g-main-chart"></div>
+
+        <form>
+            <select id="countryselect" name="q">
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Egypt">Egypt</option>,<option value=" Arab Rep"> Arab Rep</option>.
+                <option value="Germany">Germany</option>
+                <option value="Hong Kong SAR">Hong Kong SAR</option>,<option value=" China"> China</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea</option>,<option value=" Rep"> Rep</option>.
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+            </select>
+        </form>
+
+        <!--[if gt IE 8]><!-->
+        <script src="js/d3.v3.min.js"></script>
+        <script src="js/queue.v1.min.js"></script>
+        <script src="js/strikeoutgraph.js"></script>
+        <script src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#countryselect').change(function() {
+                    this.form.submit();
+                });
+            });
+        </script>
+        <!--<![endif]-->
+    </body>
+</html>
