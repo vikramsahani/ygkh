@@ -7,8 +7,8 @@ An artificial neural network is trained using development data (metrics like bir
 
 ===
 Team:
-Pravesh Koirala
-Sushil Shrestha
-Bikram Basnet
-Prakash Aryal
-nabeen khadka
+Pravesh Koirala <br/>
+Sushil Shrestha <br/>
+Bikram Basnet <br/>
+Prakash Aryal <br/>
+nabeen khadka <br/>
